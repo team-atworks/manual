@@ -5,8 +5,8 @@
 - selenium을 활용하여 화면에서 발생한 API 호출 이력을 녹화하여 test case로 등록하는 방법을 제공합니다. (explorer 기능 제한)
 - bulk, scenario, schedule test 등의 concept을 가진 테스트 기능을 지원합니다. 
 - web으로 구성된 시각화된 관리자 화면을 제공하여 business 화면에 들어가지 않아도 테스트를 수행할 수 있습니다. 
-- [수동 test 문제점](https://github.com/kimtaehan11/atworks-hello/blob/main/etc/manualTest.md) 
-- [aTworks 시스템 구성](https://github.com/kimtaehan11/atworks-hello/blob/main/business/architecture.md)
+- [수동 test 문제점](https://github.com/team-atworks/manual/blob/main/etc/manualTest.md) 
+- [aTworks 시스템 구성](https://github.com/team-atworks/manual/blob/main/business/architecture.md)
 
 
 ### 주요기능 

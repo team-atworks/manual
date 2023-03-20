@@ -2,7 +2,7 @@
 ### 1. Source 분석
 - 시스템의 Source를 분석하여 (Controller, Dto) API 구조를 정리합니다. 
 - 타사의 경우 적용하려는 시스템 담당자에게 API 구조에 대한 정보를 받아서 등록하는 방식으로 수행되는데, 일반적인 프로젝트에서 API 구조 문서에 대한 존재여부와 정확성을 검증할 수 없습니다. 가장 정확한 것은 Source이기 때문에 분석을 통해 API 구조를 정리합니다. 
-- [Path variable](https://github.com/kimtaehan11/atworks-hello/blob/main/business/pathVariable.md), Fixed length 방식의 경우 Log 분석만으로 API 를 호출할 수 없습니다. 
+- [Path variable](https://github.com/team-atworks/manual/blob/main/business/pathVariable.md), Fixed length 방식의 경우 Log 분석만으로 API 를 호출할 수 없습니다. 
 - 형상관리 시스템인 git, svn 등과 연계하여 특정일마다 변경된 API에 대한 업데이트를 자동으로 수행합니다. (시스템과 협의 필요)
 
 

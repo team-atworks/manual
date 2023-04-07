@@ -11,11 +11,10 @@
 ### 상용 솔루션과 차이점
 > 상용 API 테스트 상용 솔루션이지만 aTworks 만의 특별한 기능도 가지고 있습니다.
 <img src = "https://user-images.githubusercontent.com/52950400/230524776-4e53e7ee-e67a-4e00-9e20-71394f77703c.png" width="70%" height="30%">
-
-- 프로젝트 특성에 맞는 Customizing 작업을 통해 API구조, Log 기반에 테스트 케이스를 자동 생성하고, Login API 연계등의 작업을 사전 수행합니다.
-- selenium을 활용하여 화면에서 발생한 API 호출 이력을 녹화하여 test case로 등록하는 방법을 제공합니다. (explorer 기능 제한)
+- Source 분석, Log 수집 도구를 통한 API구조, Log 기반에 테스트 케이스를 자동 생성합니다. 
+- 화면에서 발생한 API 호출 이력을 녹화하여 테스트 케이스로 등록하는 방법을 제공합니다. (IE 기능 제한)
 - bulk, scenario, schedule test 등의 concept을 가진 테스트 기능을 지원합니다. 
-- web으로 구성된 시각화된 관리자 화면을 제공하여 business 화면에 들어가지 않아도 테스트를 수행할 수 있습니다. 
+- web으로 구성된 시각화된 GUI 제공하여 업무 화면에 들어가지 않아도 테스트를 수행할 수 있습니다. 
 
 
 ### 주요기능 

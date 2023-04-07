@@ -5,10 +5,9 @@
 
 
 ### Test code 작성
-- 요즘에는 TDD 라고 해서 test 코드의 중요성이 점점 강조되고 있고, aTworks도 사용하고 있는 방법입니다. 
-- 각 개발자마다 test code를 만들고 이를 통해서 검증이 이뤄진다면 테스트 자동화 도구라는 말도 안되는 소리를 하고 있지 않을 것 같습니다. 
-- 하지만 제가 일하고 있는 SI 프로젝트에서는 business가 90% 이상이라고 생각되는데 이를 test code로 만들기는 쉽지 않은 일입니다.  
-
+- 요즘에는 TDD 라고 해서 개발자들이 자신이 만든 프로그램의 검증을 하는 Test code를 만들어서 품질을 높이는 방법을 사용하고 있습니다. 
+- [테스트 주도 개발](https://www.samsungsds.com/kr/insights/test-driven-development.html) 
+- 금융 SI/SM 프로젝트에서 사용되는 것을 거의 보지 못했으며, 이는 개발자 단위에서 확인 할 수 있는 것으로 관리자들이 파악하기는 쉽지 않습니다.                             
 
 ### 수동 test 와 aTworks 사용시 차이점
 | 유형| 수동 test| aTworks test|

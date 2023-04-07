@@ -9,7 +9,7 @@
 
 
 ### 상용 솔루션과 차이점
-> 상용 API 테스트 상용 솔루션이지만 aTworks 만의 특별한 기능도 가지고 있습니다.
+> 아래는 API 테스트 상용 솔루션이지만 aTworks 만의 특별한 기능도 가지고 있습니다.
 <img src = "https://user-images.githubusercontent.com/52950400/230524776-4e53e7ee-e67a-4e00-9e20-71394f77703c.png" width="70%" height="30%">
 
 - Source 분석, Log 수집 도구를 통한 API구조, Log 기반에 테스트 케이스를 자동 생성합니다. 
@@ -21,11 +21,10 @@
 
 ### 주요기능 
 
-- [시스템 분석](https://github.com/team-atworks/manual/blob/main/systemAnalyze.md)
-적용하는 시스템 여건에 맞게 Source 분석, Log 수집을 통해 test 을 위한 기반데이터를 생성합니다.
+- [시스템 분석](https://github.com/team-atworks/manual/blob/main/systemAnalyze.md) : 적용하는 시스템 여건에 맞게 Source 분석, Log 수집을 통해 test 을 위한 기반데이터를 생성합니다.
 - [API test](https://github.com/team-atworks/manual/blob/main/apiTest.md) : 단순한 API test 기능이지만 API 구조, Test case 등이 자동으로 생성되어 있고, 로그인 멀티서버 테스트 기능도 추가로 제공합니다.
--  [bulk test](https://github.com/team-atworks/manual/blob/main/bulkTest.md) : 이전에 test된 내용을 변경없이 multi thread 로 대량건의 test case를 원하는 시간에 수행하는 기능입니다.
--  [API 호출 이력 녹화](https://github.com/team-atworks/manual/blob/main/apiRecord.md) : 화면에서 발생한 API 호출 이력을 녹화하여 test case로 등록하는 방법을 제공합니다
+- [bulk test](https://github.com/team-atworks/manual/blob/main/bulkTest.md) : 이전에 test된 내용을 변경없이 multi thread 로 대량건의 test case를 원하는 시간에 수행하는 기능입니다.
+-  [API 호출 이력 녹화](https://github.com/team-atworks/manual/blob/main/apiRecord.md) : 화면에서 발생한 API 호출 이력을 녹화하여 test case로 등록하는 방법을 제공합니다.
 -  [scenario test](https://github.com/team-atworks/manual/blob/main/scenarioTest.md) : API 호출, SQL 조회등의 Transaction 단위를 연결하여 순차적으로 테스트를 수행할 수 있습니다.
  
  

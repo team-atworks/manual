@@ -5,7 +5,7 @@
 
 ### xml, json 전환
 - asis 에서는 xml 특이사항 존재 (data가 모두 String type, List 구조가 특수한 key로 구분)
-- 프로젝트 수행팀에서 xml에서 json으로 변경하는 role을 정리하지 않아서 business 개발자들에 따라서 임의로 처리함
+- 프로젝트 수행팀에서 xml에서 json으로 변경하는 rule을 정의하지 않아서 business 개발자들이 임의로 처리함
 - xml 최상위 root node에 attribute는 header 데이터로 사용하고 있었는데 tobe에서 버려짐 (json->xml 변경은 불가)
 
 
@@ -16,7 +16,7 @@
 
 ### test report
 - 6월 26,29일 2일치 log에서 분석된 test case 중 Long transaction 일부를 제외한 전건 수행 (총 385,168건 * 2)
-- API 종류는 1712건 (CRUD)
+- API 종류는 1,712건 (CRUD)
 - database는 실제 운영서버 기준 26일로 rollback 한 상태
 - asis(xml), tobe(json) 동시 test 후에 결과를 비교하는 방식을 사용
 - test 소요시간 7시간 (tobe db에 sequence 문제로 인해 속도 지연현상 발생)

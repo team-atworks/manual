@@ -7,3 +7,37 @@
 
 
 ![image](https://user-images.githubusercontent.com/85854794/221328322-0cb3571e-57c9-4a40-9da1-a4d909f8b34c.png)
+
+
+### 테스트 화면 S생명 
+> 인터넷 급여실손의료비보장보험 다이렉트 보험료 계산
+
+![image](https://user-images.githubusercontent.com/52950400/230808453-39d8ea33-9cd7-4e4d-8bb0-51456fcbbc46.png)
+
+
+> Request
+```
+{
+    "proType": "9",
+    "prcdId": 1119,
+    "prcd": "Y064501ANNNAE02",
+    "prdtVcd": "002",
+    "insCd": "LY0645004",
+    "repCd": "LQ_NX75GL5L0000_G03",
+    "prdtnm": "인터넷 급여 실손의료비보장보험(2301)(갱신형,무배당)",
+    "contName": "고객님",
+    * "contBirth": "19850312", // 생년월일
+    * "contGender": "1",  // 성별
+    ....   
+}
+```
+> Response
+```
+{
+    "contAmt": "0",
+    "contAmtSp": "0",
+    * "premium": "7270", // 월 보험료
+    "success": true,
+    ...
+}
+```

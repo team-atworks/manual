@@ -43,6 +43,7 @@ public class ServerSaveRequest {
 
 ![image](https://user-images.githubusercontent.com/85854794/221094702-653555e1-0d2a-45b2-92ba-b0ea2930707a.png)
 
+- C:\sample_source
 
 
 ### 2. Log 수집
@@ -79,9 +80,7 @@ server 데이터 구조에 따른 테스트 수행 화면
 ![image](https://user-images.githubusercontent.com/85854794/221109998-574fb450-dcf2-4f4f-a0f8-50ea4baeccdb.png)
 
 
-
-
-
+- C:\sample_log
 
 
 

@@ -10,8 +10,9 @@
 
 
 ### 테스트 화면 S생명 
-> 인터넷 급여실손의료비보장보험 다이렉트 보험료 계산
-
+> 인터넷 급여실손의료비보장보험 다이렉트 보험료 계산  
+> 생년월일과 성별입력으로 보험료가 구해지는 간단한 화면  
+> [바로가기](https://direct.samsunglife.com/medical.eds#uiTabProduct2)
 ![image](https://user-images.githubusercontent.com/52950400/230808453-39d8ea33-9cd7-4e4d-8bb0-51456fcbbc46.png)
 
 

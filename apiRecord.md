@@ -38,7 +38,7 @@
 {
     "contAmt": "0",
     "contAmtSp": "0",
-    * "premium": "7270", // 월 보험료
+    * "premium": "11860", // 월 보험료
     "success": true,
     ...
 }

@@ -1,6 +1,7 @@
 # atworks 테스트 자동화 도구 소개
 ### aTworks 이해하기
 > aTworks는 Application Programming Interface (API) 테스트를 효율적이고 정확하게 할 수 있게 도와주는 도구 입니다.   
+> 업무 화면을 대체하여 발생하는 API 테스트를 대신해주는 기능입니다.
 
 <img src = "https://user-images.githubusercontent.com/52950400/230523544-35b62e57-8184-4872-9b64-84acfceeeacc.png" width="70%" height="30%">
 

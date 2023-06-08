@@ -21,7 +21,7 @@
 
 
 ### aTworks의 사용한 test 방향
-- 시스템 전반에 관한 test는 bulk test 수행
+- 시스템 전반에 관한 test는 대량테스트를 통한 각 API 마다 큰 영향도를 체크
 - 중요 업무마다 scenario test 를 구성하여 일일점검, 사이드이펙트 체크 같은 반복적인 부분은 aTworks가 담당
 - 테스터는 aTworks를 직접 제어하면서, aTworks에서 부족한 디테일한 영역의 test 수행
 - 개발자들은 자신이 만든 모듈에 대한 개발단계에서 단순 test, 실제 배포전에는 광범위한 test가 가능

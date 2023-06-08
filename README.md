@@ -38,6 +38,5 @@
 ### 적용 방안
 - [기존 프로젝트 운영 적용](https://github.com/team-atworks/manual/blob/main/project/systemMaintenance.md)
 - [신규 프로젝트 적용](https://github.com/team-atworks/manual/blob/main/project/systemIntegration.md)
-- [전환/EOS 프로젝트 적용](https://github.com/team-atworks/manual/blob/main/site/eos.md)
 
 

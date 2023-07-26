@@ -85,15 +85,15 @@ Database|jdbc URL, Database Type, ID, Password |시나리오 테스트에서 사
 - 서버이름: 테스터가 인지 가능한 서버이름을 입력한다
 - IP: 호출한 TCP 서버 아이피를 입력한다
 - Port: TCP 서버 포트를 입력한다
-- 데이터구조: JSON, XML, `Fixed-Length`, Form 형태중 선택한다 
+- 데이터구조: JSON, XML, **Fixed-Length**, Form 형태중 선택한다 
 
 #### 3.1.3 UI 서버 등록
 ![UI_서버_등록](./images/3.1.3_UI_서버등록.png)
 - 서버유형: UI로 선택한다
 - 배포환경: 테스트/운영 중 선택한다
 - 서버이름: 테스터가 인지 가능한 서버이름을 입력한다
-- URL(Web): 시나리오에서 `화면` 녹화를 수행할 URL을 입력한다
-  반드시, http(s)로 시작하는 URL을 입력한다 
+- URL(Web): 시나리오에서 `화면 녹화를 수행할 URL`을 입력한다  
+  _반드시, http(s)로 시작하는 URL을 입력한다_ 
 - Database: API 서버를 선택한다 (녹화이력에서 수집한 전문을 수행할 서버 선택)
 <!--데이터베이스가 아닌 API 호출 서버라고 해야하지 않을까 -->
 
@@ -109,7 +109,7 @@ Database|jdbc URL, Database Type, ID, Password |시나리오 테스트에서 사
 - 접속ID: Database 접속 아이디 입력
 - 패스워드: Database 접속 아이디의 비밀번호 입력
 - Test 버튼: 입력한 정보로 Database 연결을 시도한다.  
-  `연결이 실패된 경우 DB 서버 등록이 불가하다`
+  `연결이 실패된 경우 DB 서버 등록이 불가하다`  
   _따라서, aTworks 서비스가 올라간 환경에서 입력한 **Database 접근이 가능**해야 한다_
 
 ### 3.2 로그인정보 (팝업)

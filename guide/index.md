@@ -259,9 +259,36 @@ Database|jdbc URL, Database Type, ID, Password |시나리오 테스트에서 사
 ## 5. API 구조
 > 시스템에서 호출 가능한 API 목록을 조회할 수 있습니다.
 
+![API 구조](./images/5._API_구조.png)
+- 검색조건: 조건을 입력하여 조건에 맞는 대량테스트 이력을 조회할 수 있다
+  - API명: URL Path, Service ID, Service Desc Like 검색
+  - Http Method
+  - 업무구분: API 상위 업무 코드를 나타낸다
+  - API 유형: API 유형을 나타낸다    
+    (정상적인: 일반 API, 오래걸리는: Long Transaction API, 로그인: Login API)
+  - `+신규`버튼: 신규 API 등록 팝업을 호출한다   
+    (사이트별로 구조에 따라 정상적으로 등록되지 않을 수 있다)
+- API 리스트 
+  - URL Path: API의 URL Path를 표기한다
+  - Http Method: Http Method Type을 나타낸다 (Post, Get, Put, Delete, Fetch)
+  - 업무구분
+  - Service ID
+  - Service Desc
+  - 수집경로: API 구조를 수집한 경로를 나타낸다
+    - 직접 입력: 사용자가 수동으로 입력하는 경우
+    - Source 분석: Controller, Dto 소스를 통해 API 구조를 생성
+    - Log 분석: 미등록 API의 로그를 수집하는 경우
+    - aTworks 테스트: 미등록 API를 화면 녹화를 통해 수집하는 경우
+  - API 유형
+  - 마지막 수정: 마지막으로 변경된 일자를 표기한다
+  - API상세 조회: 🔍 버튼클릭 시 선택한 API 상세 결과화면으로 이동한다
+  - API 삭제: 선택한 API 정보를 삭제한다  
 
+### 5.1 API 상세
+> 선택한 API의 URL정보, 서비스 정보, API Request, Response 정보를 보여 줍니다.
 
-개발한 API를 단건 및 반복 테스트를 수행하며 결과를 공유하여 개발 생산성을 높힐수 있습니다. 로그인 API와 연계된 사용자 세션관리, 테스트 이력조회, 테스트 재사용, 듀얼테스트 결과 비교등 상용솔루션(Postman,insomnia 등)이 가진 기능 외 추가기능도 제공 합니다.
+![API 상세](./images/5.1_API_상세.png)
+
 ## 6. 대량 테스트 
 > 테스트 이력 또는 로그 기반으로 수행한 대량 테스트 수행 정보를 보여 줍니다.
 

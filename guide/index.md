@@ -24,6 +24,10 @@ aTworks 사용자 가이드 v1.0
   - [4.4 D\_DAY 난수 등록/수정 (팝업)](#44-d_day-난수-등록수정-팝업)
   - [4.5 SSN 난수 등록/수정 (팝업)](#45-ssn-난수-등록수정-팝업)
 - [5. API 구조](#5-api-구조)
+  - [5.1 API 상세](#51-api-상세)
+  - [5.2 API 테스트 (팝업)](#52-api-테스트-팝업)
+  - [5.3 듀얼 API 테스트 (팝업)](#53-듀얼-api-테스트-팝업)
+  - [5.4 결과비교 (팝업)](#54-결과비교-팝업)
 - [6. 대량 테스트](#6-대량-테스트)
   - [6.1 대량 테스트 등록](#61-대량-테스트-등록)
   - [6.2 대량 테스트 결과](#62-대량-테스트-결과)
@@ -289,8 +293,80 @@ Database|jdbc URL, Database Type, ID, Password |시나리오 테스트에서 사
 
 ![API 상세](./images/5.1_API_상세.png)
 
+- URL 정보: 
+  - URL Path, Http Method 정보를 보여준다
+  - `수행`버튼: API 테스트 팝업을 오픈한다
+  - `이력`버튼: `발송이력` 화면으로 가서 선택한 API 호출 이력을 보여준다
+- 서비스 정보
+  - Service ID (사이트마다 Service ID 기준은 상이함)
+  - Service 설명
+  - API 유형: API 특성을 보여준다
+  - `저장` 선택한 API의 서비스 정보를 변경한다
+- API Request/Response 정보
+  - Request 정보, Response 정보: 
+    - in/out: request, response 구분
+    - 유형: 
+  
+    | 이름| 설명| 자식노드 소유여부| Response 적용|
+    | --| --| --| --|
+    | String| String Type data| X| O|
+    | Number| Number Type Data| X| O|
+    | Boolean| Boolean Type Data| X| o|
+    | `List<T>`| List 내부에 String, Number, Boolean 데이터 존재| X| O|
+    | _QueryString| URL에 '?' 뒤에 들어가는 Get 전용 데이터| O| X|
+    | _PathVariable| URL Path에 직접적으로 들어가는 데이터| O| X|
+    | _RootList| 최상위 객체가 List인 데이터| O| O|
+    - 물리명: API 호출시 사용되는 Key
+    - 논리명: 물리명에 대한 설명
+    - Size: Fixed Length 방식에서만 사용되는 데이터
+    - `+`버튼: 신규 컬럼을 추가 
+    - `-`버튼: 기존 컬럼을 제거 
+
+### 5.2 API 테스트 (팝업)
+> 선택한 API를 사전에 등록된 Server에 호출 테스트를 수행할 수 있습니다. 
+
+![API 테스트](./images/5.2_API_테스트.png)
+
+- 서버 정보: API 테스트 수행할 서버의 정보
+  - 대상서버: 사전에 등록한 서버들 중에 선택할 수 있다
+  - Server Url: 선택한 서버의 URL 정보
+- API 정보
+  - URL Path, Http Method 정보를 보여준다
+  - 우측 상단에 API 테스트 결과를 보여준다   
+    (사전에 협의되는 경우 사이트의 시스템 코드로 보여준다)
+  - Request Body: 직접 입력하여 변경 가능
+  - Reponse Body: 수정 불가
+  - `Sample Data`버튼: 이전에 로그기록이나 테스트한 건중에 하나의 샘플 Request 를 조회
+  - `전송`버튼: API Test를 수행한다
+  - `듀얼 테스트`버튼: API 테스트 창을 더 오픈한다
+
+### 5.3 듀얼 API 테스트 (팝업)
+> API 테스트 창을 분할하여 하나의 API를 2개의 서버 또는 다른 데이터로 테스트를 수행합니다. 
+
+![API 테스트](./images/5.3_듀얼_API_테스트.png)
+
+  - `싱글 테스트`버튼: API 테스트로 돌아간다
+  - `결과비교`버튼: 양쪽은 Response Data를 비교한다
+
+
+### 5.4 결과비교 (팝업)
+> 듀얼 테스트 Response Data를 비교하는 기능으로 aTworks 자체의 [직렬화](https://github.com/team-atworks/manual/blob/main/business/dataSerialization.md)를 통해 response의 Depth나 구조가 달라도 비교가 가능합니다.
+
+
+![API 테스트](./images/5.4_결과비교.png)
+
+- 컬럼명: String, Number, Boolean 단위의 Object의 Key를 보여준다
+  (List의 경우 index를 포함한 prefix가 붙을 수 있다)
+- Difference 유형: VALUE, TYPE, IS_NULL 등으로 분류된다 
+- Server A: 왼쪽 API 테스트 결과
+- Server B: 오른쪽 API 테스트 결과
+
+
+
 ## 6. 대량 테스트 
 > 테스트 이력 또는 로그 기반으로 수행한 대량 테스트 수행 정보를 보여 줍니다.
+>
+> ![Alt text](image.png)
 
 ![대량 테스트](./images/6._대량테스트.png)
 - 검색조건: 조건을 입력하여 조건에 맞는 대량테스트 이력을 조회할 수 있다

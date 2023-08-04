@@ -1076,9 +1076,15 @@ Database|jdbc URL, Database Type, ID, Password |시나리오 테스트에서 사
 ### 15.1 환경변수 관리  
 > aTworks 환경변수를 관리합니다. 
 
-- 응답대기시간: 
-- 신규API저장여부: 
+- 응답대기시간: API 호출시 최대 대기 시간을 의미합니다.
+- 신규API저장여부: 신규 API가 녹화,로그로 발견 되었을 경우 저장합니다.
 
 ### 15.2 aTworks Client 버전관리
+> aTworks Client 프로그램 관리 설정입니다.  
+> aTworks는 녹확기능을 제공 하기 위하여 Cellenium 기반 클라이언 프로그램이 존재합니다.  
+> 해당 프로그램을 관리합니다. (aTworks 솔루션 담당자 역할)
 
 ### 15.3 chrome Driver 관리
+> aTworks Client를 구동시키기 위해선 chromeDriver가 필요합니다.  
+> 각 사이트마다 버전이 상이하고, 폐쇄망의 경우 인트라넷 다운로드가 되지 않기 때문에  
+> 각 사이트의 크롬 버전에 맞는 chromeDriver를 수동으로 올려 놓는 기능 입니다.  
